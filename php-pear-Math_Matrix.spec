@@ -32,7 +32,7 @@ This class has in PEAR status: %{_status}.
 Macierze s± reprezentowane przez dwuwymiarowe tablice liczb. Ta klasa
 definiuje metody dla obiektów macierzy, jak równie¿ statyczne metody do
 czytania, zapisywania i manipulowania macierzami, w³±czaj±c w to metody
-do rozwi±zywania systemów równañ liniowych (z b±d¼ bez iteracyjnej
+do rozwi±zywania uk³adów równañ liniowych (z b±d¼ bez iteracyjnej
 korekcji b³êdów).
 
 Ta klasa ma w PEAR status: %{_status}.
