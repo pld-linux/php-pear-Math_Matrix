@@ -26,7 +26,7 @@ methods to read, write and manipulate matrices, including methods to
 solve systems of linear equations (with and without iterative error
 correction).
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Macierze s± reprezentowane przez dwuwymiarowe tablice liczb. Ta klasa
