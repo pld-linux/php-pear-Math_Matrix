@@ -4,8 +4,8 @@
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - Class to represent matrices and matrix operations
-Summary(pl):	%{_pearname} - Klasa do prezentowanie macierzy i operacji na nich
+Summary:	%{_pearname} - class to represent matrices and matrix operations
+Summary(pl):	%{_pearname} - klasa do prezentowanie macierzy i operacji na nich
 Name:		php-pear-%{_pearname}
 Version:	0.8.5
 Release:	1
