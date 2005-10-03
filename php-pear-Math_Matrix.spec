@@ -8,7 +8,7 @@ Summary:	%{_pearname} - class to represent matrices and matrix operations
 Summary(pl):	%{_pearname} - klasa do prezentowanie macierzy i operacji na nich
 Name:		php-pear-%{_pearname}
 Version:	0.8.5
-Release:	2.1
+Release:	2.2
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,6 +16,7 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Math_Matrix/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
+Requires:	php-pear-Math_Vector
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
