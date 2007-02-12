@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - class to represent matrices and matrix operations
-Summary(pl):	%{_pearname} - klasa do prezentowanie macierzy i operacji na nich
+Summary(pl.UTF-8):   %{_pearname} - klasa do prezentowanie macierzy i operacji na nich
 Name:		php-pear-%{_pearname}
 Version:	0.8.5
 Release:	4
@@ -32,18 +32,18 @@ correction).
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Macierze s± reprezentowane przez dwuwymiarowe tablice liczb. Ta klasa
-definiuje metody dla obiektów macierzy, jak równie¿ statyczne metody do
-czytania, zapisywania i manipulowania macierzami, w³±czaj±c w to metody
-do rozwi±zywania uk³adów równañ liniowych (z b±d¼ bez iteracyjnej
-korekcji b³êdów).
+%description -l pl.UTF-8
+Macierze sÄ… reprezentowane przez dwuwymiarowe tablice liczb. Ta klasa
+definiuje metody dla obiektÃ³w macierzy, jak rÃ³wnieÅ¼ statyczne metody do
+czytania, zapisywania i manipulowania macierzami, wÅ‚Ä…czajÄ…c w to metody
+do rozwiÄ…zywania ukÅ‚adÃ³w rÃ³wnaÅ„ liniowych (z bÄ…dÅº bez iteracyjnej
+korekcji bÅ‚Ä™dÃ³w).
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -52,7 +52,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
