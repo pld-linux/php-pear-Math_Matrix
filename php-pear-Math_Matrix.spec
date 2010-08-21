@@ -3,12 +3,11 @@
 %define		_subclass	Matrix
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - class to represent matrices and matrix operations
 Summary(pl.UTF-8):	%{_pearname} - klasa do prezentowanie macierzy i operacji na nich
 Name:		php-pear-%{_pearname}
 Version:	0.8.5
-Release:	5
+Release:	6
 Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
@@ -20,24 +19,28 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
 Requires:	php-pear-Math_Vector
+Suggests:	php-pear-PHPUnit <= 0.6.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+# exclude optional dependencies
+%define		_noautoreq	pear(PHPUnit.*)
+
 %description
-Matrices are represented as 2 dimensional arrays of numbers.
-This class defines methods for matrix objects, as well as static
-methods to read, write and manipulate matrices, including methods to
-solve systems of linear equations (with and without iterative error
+Matrices are represented as 2 dimensional arrays of numbers. This
+class defines methods for matrix objects, as well as static methods to
+read, write and manipulate matrices, including methods to solve
+systems of linear equations (with and without iterative error
 correction).
 
 In PEAR status of this package is: %{_status}.
 
 %description -l pl.UTF-8
 Macierze są reprezentowane przez dwuwymiarowe tablice liczb. Ta klasa
-definiuje metody dla obiektów macierzy, jak również statyczne metody do
-czytania, zapisywania i manipulowania macierzami, włączając w to metody
-do rozwiązywania układów równań liniowych (z bądź bez iteracyjnej
-korekcji błędów).
+definiuje metody dla obiektów macierzy, jak również statyczne metody
+do czytania, zapisywania i manipulowania macierzami, włączając w to
+metody do rozwiązywania układów równań liniowych (z bądź bez
+iteracyjnej korekcji błędów).
 
 Ta klasa ma w PEAR status: %{_status}.
 
@@ -46,8 +49,8 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
