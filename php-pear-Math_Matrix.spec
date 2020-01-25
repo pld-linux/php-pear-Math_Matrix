@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		beta
 %define		_pearname	Math_Matrix
 Summary:	%{_pearname} - class to represent matrices and matrix operations
